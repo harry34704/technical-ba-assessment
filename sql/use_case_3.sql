@@ -6,7 +6,7 @@ Identify customers close to plan limits who are good candidates for upgrades.
 Assumptions
 Plan limits:
 Basic → 10,000 MB
-Premium → 50,000 Mb
+Premium → 50,000 MB
 SQL Query
 SELECT 
     u.Customer_ID,
