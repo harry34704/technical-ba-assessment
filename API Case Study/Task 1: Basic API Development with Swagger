@@ -1,0 +1,72 @@
+Part 2: API Case Study
+Selected Tasks
+Task 1: Basic API Development with Swagger
+
+Overview
+
+For this section, I focused on designing a simple User Management API.
+
+Instead of overcomplicating the solution, I approached it from a business and integration perspective — defining clear endpoints, expected inputs/outputs, and ensuring proper validation and error handling.
+
+The goal was to design something that is:
+
+Easy to understand
+Scalable
+Practical for real-world use
+API Design: User Management System
+Base URL
+/api/v1
+Endpoints Overview
+Method	Endpoint	Description
+POST	/users	Create a user
+GET	/users/{id}	Retrieve user details
+PUT	/users/{id}	Update user
+DELETE	/users/{id}	Delete user
+1. Create User
+Endpoint
+POST /users
+Request Body
+{
+  "name": "Harry",
+  "email": "harry34704@outlook.com"
+}
+Success Response (201 Created)
+{
+  "id": 101,
+  "name": "Harry",
+  "email": "harry34704@outlook.com",
+  "created_at": "2026-03-27"
+}
+2. Get User
+Endpoint
+GET /users/{id}
+Example
+GET /users/101
+Response (200 OK)
+{
+  "id": 101,
+  "name": "harry",
+  "email": "harry34704@outlook.com"
+}
+3. Update User
+Endpoint
+PUT /users/{id}
+Request Body
+{
+  "name": "Hanay Munyai",
+  "email": "harry34704@outlook.com"
+}
+Response (200 OK)
+{
+  "message": "User updated successfully"
+}
+4. Delete User
+Endpoint
+DELETE /users/{id}
+Response (200 OK)
+{
+  "message": "User deleted successfully"
+}
+
+
+
