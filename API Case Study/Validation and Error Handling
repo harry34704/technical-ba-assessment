@@ -1,0 +1,56 @@
+Part 2: API Case Study
+Selected Tasks
+
+Task 2: Validation and Error Handling
+
+Validation Rules
+
+To ensure data quality and avoid bad inputs, I added the following validations:
+
+Name
+Required
+Minimum length: 2 characters
+Email
+Required
+Must follow valid email format
+User ID
+Must exist when performing GET, PUT, DELETE
+Error Handling
+
+Proper error handling is critical for both developers and users of the API.
+
+400 – Bad Request
+{
+  "error": "Invalid email format"
+}
+404 – Not Found
+{
+  "error": "User not found"
+}
+500 – Internal Server Error
+{
+  "error": "Something went wrong. Please try again later."
+}
+My Approach
+
+I focused on keeping the API simple and predictable.
+
+Used standard REST structure
+Ensured each endpoint has a clear purpose
+Included meaningful responses instead of generic ones
+
+I also made sure validation and error handling are clear, since these are usually where integrations fail in real systems.
+
+Business Relevance
+
+This API can support:
+
+Customer onboarding
+Profile management
+Integration with other systems (e.g., CRM, support tools)
+
+From a business perspective:
+
+Clean APIs reduce integration issues
+Good validation improves data quality
+Clear error messages reduce support tickets
